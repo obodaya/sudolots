@@ -1,0 +1,125 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contact</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="menu">
+                <ul>
+                <li><a href="HOME.html">HOME</a></li>
+                <li><a href="ABOUT.html">ABOUT</a></li>
+                <li><a href="COURSE.html">COURSE</a></li>
+                <li><a href="CONTACT.html">CONTACT</a></li>
+                </ul>
+            </div>
+
+
+<div class="CONTAINER">
+        <div class="HEADER">
+            <h1>Get In Touch</h1>
+            <p>We'd love to hear from you. Send us a message and we'll respond as soon as possible.</p>
+        </div>
+
+        <div class="CONTACT-INFO">
+            <div class="INFO-CARD">
+                <h3><i class="FAS FA-MAP-MARKER-ALT"></i> Our Location</h3>
+                <p>123 Busiika Rd<br>via, Gayaza Rd<br>Uganda</p>
+            </div>
+            
+            <div class="INFO-CARD">
+                <h3><i class="FAS FA-PHONE"></i> Contact Info</h3>
+                <p>Phone: +256 (56) 47-47-2<br>Email: obowine4@gmail.com<br>Fax: +1 (555) 123-4568</p>
+            </div>
+            
+            <div class="INFO-CARD">
+                <h3><i class="fAS FA-CLOCK"></i> Business Hours</h3>
+                <p>Monday - Friday: 9:00 AM - 6:00 PM<br>Saturday: 10:00 AM - 4:00 PM<br>Sunday: Closed</p>
+            </div>
+        </div>
+
+        <div class="contact-form">
+            <form>
+                <div class="form-group">
+                    <label for="name">Full Name</label>
+                    <input type="text" id="name" class="form-control" placeholder="Enter your name">
+                </div>
+                
+                <div class="form-group">
+                    <label for="email">Email Address</label>
+                    <input type="email" id="email" class="form-control" placeholder="Enter your email">
+                </div>
+                
+                <div class="form-group">
+                    <label for="subject">Subject</label>
+                    <input type="text" id="subject" class="form-control" placeholder="Enter subject">
+                </div>
+                
+                <div class="form-group">
+                    <label for="message">Your Message</label>
+                    <textarea id="message" class="form-control" placeholder="Type your message here"></textarea>
+                </div>
+                
+                <button type="submit" class="btn">Send Message</button>
+            </form>
+        </div>
+
+        <div class="map">
+            <h3><i class="fas fa-map"></i> Find Us</h3>
+            <div class="map-placeholder">
+                Interactive Map Location
+            </div>
+        </div>
+<div class="icon">
+                    <a href="#"><ion-icon name="logo-facebook"></ion-icon></a>
+                    <a href="#"><ion-icon name="logo-tiktok"></ion-icon></a>
+                    <a href="#"><ion-icon name="logo-google"></ion-icon></a>
+                     <a href="https://www.youtube.com/watch?v=CQZxeoQeo5c"><ion-icon name="logo-youtube"></ion-icon></a>
+                </div>
+            </div>
+        </div>
+    </div>
+    <script src="https://unpkg.com/ionicons@5.4.0/dist/ionicons.js"></script>
+
+        
+        </div>
+    </div>
+
+    <script>
+        // Add subtle animation to background shapes
+        document.addEventListener('DOMContentLoaded', function() {
+            const shapes = document.querySelectorAll('.shape');
+            
+            shapes.forEach(shape => {
+                // Random movement on page load
+                const randomX = Math.random() * 20 - 10;
+                const randomY = Math.random() * 20 - 10;
+                shape.style.transform = `translate(${randomX}px, ${randomY}px)`;
+            });
+            
+            // Add floating animation
+            function floatShapes() {
+                shapes.forEach(shape => {
+                    const randomX = Math.random() * 10 - 5;
+                    const randomY = Math.random() * 10 - 5;
+                    
+                    shape.animate([
+                        { transform: 'translate(0, 0)' },
+                        { transform: `translate(${randomX}px, ${randomY}px)` },
+                        { transform: 'translate(0, 0)' }
+                    ], {
+                        duration: 15000 + Math.random() * 10000,
+                        iterations: Infinity,
+                        easing: 'ease-in-out'
+                    });
+                });
+            }
+            
+            floatShapes();
+        });
+    </script>
+
+</body>
+</html>

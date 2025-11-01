@@ -1,0 +1,203 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>About</title>
+    <link rel="stylesheet" href="">
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    
+            <div class="menu">
+                <ul>
+                <li><a href="HOME.html">HOME</a></li>
+                <li><a href="ABOUT.html">ABOUT</a></li>
+                <li><a href="COURSE.html">COURSE</a></li>
+                <li><a href="CONTACT.html">CONTACT</a></li>
+                </ul>
+            </div> 
+      
+
+ <div class="background-shapes">
+        <div class="shape shape-1"></div>
+        <div class="shape shape-2"></div>
+        <div class="shape shape-3"></div>
+    </div>
+
+    <div class="container">
+        <!-- Header -->
+        <header>
+            <a href="#" class="logo">
+                <i class="fas fa-rocket"></i>
+                <span></span>
+            </a>
+        </header>
+
+        <!-- Hero Section -->
+        <section class="hero">
+            <h1>About Our Company</h1>
+            <p>We are a team of passionate innovators dedicated to creating exceptional digital experiences that transform businesses and empower growth.</p>
+            <a href="#" class="btn">Explore Our Work</a>
+        </section>
+
+        <!-- About Section -->
+        <section class="about-section">
+            <div class="about-text">
+                <h2>Our Story</h2>
+                <p>Founded in 2015, our company began as a small startup with a big vision. We believed that technology could solve complex problems and improve people's lives in meaningful ways.</p>
+                <p>Over the years, we've grown into a team of dedicated professionals who are passionate about innovation, quality, and customer satisfaction. Our journey has been marked by challenges, learning, and continuous improvement.</p>
+                <p>Today, we serve clients across multiple industries, helping them transform their businesses through cutting-edge solutions and strategic partnerships.</p>
+                <a href="#" class="btn">Learn More</a>
+            </div>
+            <div class="about-image">
+                <img src="GBPUSD_2025-07-11_14-48-55.png" alt="Our team working together">
+            </div>
+        </section>
+
+        <!-- Values Section -->
+        <section class="values-section">
+            <div class="section-title">
+                <h2>Our Values</h2>
+                <p>These core principles guide everything we do and shape our company culture.</p>
+            </div>
+            <div class="values-grid">
+                <div class="value-card">
+                    <div class="value-icon">
+                        <i class="fas fa-lightbulb"></i>
+                    </div>
+                    <h3>Innovation</h3>
+                    <p>We constantly push boundaries and explore new possibilities to deliver cutting-edge solutions.</p>
+                </div>
+                <div class="value-card">
+                    <div class="value-icon">
+                        <i class="fas fa-users"></i>
+                    </div>
+                    <h3>Collaboration</h3>
+                    <p>We believe in the power of teamwork and building strong relationships with clients and partners.</p>
+                </div>
+                <div class="value-card">
+                    <div class="value-icon">
+                        <i class="fas fa-heart"></i>
+                    </div>
+                    <h3>Passion</h3>
+                    <p>We are deeply committed to our work and driven by a genuine desire to make a difference.</p>
+                </div>
+            </div>
+        </section>
+
+        <!-- Team Section -->
+        <section class="team-section">
+            <div class="section-title">
+                <h2>Meet Our Team</h2>
+                <p>Our diverse team of experts brings together years of experience and a shared passion for excellence.</p>
+            </div>
+            <div class="team-grid">
+                <div class="team-member">
+                    <div class="member-img">
+                        <img src="IMG-20241217-WA0075.jpg" alt="Team Member">
+                    </div>
+                    <div class="member-info">
+                        <h3>OBODAYA ANDREW</h3>
+                        <p>CEO & Founder</p>
+
+                    </div>
+                </div>
+                <div class="team-member">
+                    <div class="member-img">
+                        <img src="OIP (2).jpeg" alt="Team Member">
+                    </div>
+                    <div class="member-info">
+                        <h3>Sarah Williams</h3>
+                        <p>Creative Director</p>
+                    </div>
+                </div>
+                <div class="team-member">
+                    <div class="member-img">
+                        <img src="image.jpeg.jpg" alt="Team Member">
+                    </div>
+                    <div class="member-info">
+                        <h3>KALEMERA CHARLSE</h3>
+                        <p>Lead Developer</p>
+                    </div>
+                </div>
+                <div class="team-member">
+                    <div class="member-img">
+                        <img src="Images/c.png" alt="Team Member">
+                    </div>
+                    <div class="member-info">
+                        <h3>RIC HISSAN</h3>
+                        <p>Marketing Director</p>
+
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Stats Section -->
+        <section class="stats-section">
+            <div class="section-title">
+                <h2>Our Impact</h2>
+                <p>Numbers that speak about our journey and success</p>
+            </div>
+            <div class="stats-grid">
+                <div class="stat-card">
+                    <span class="stat-number">250+</span>
+                    <span class="stat-text">Projects Completed</span>
+                </div>
+                <div class="stat-card">
+                    <span class="stat-number">98%</span>
+                    <span class="stat-text">Client Satisfaction</span>
+                </div>
+                <div class="stat-card">
+                    <span class="stat-number">50+</span>
+                    <span class="stat-text">Team Members</span>
+                </div>
+                <div class="stat-card">
+                    <span class="stat-number">15+</span>
+                    <span class="stat-text">Countries Served</span>
+                </div>
+            </div>
+        </section>
+            <div class="copyright">
+                <p>&copy; 2023 Company Name. All rights reserved.</p>
+            </div>
+        </footer>
+    </div>
+
+    <script>
+        // Add subtle animation to background shapes
+        document.addEventListener('DOMContentLoaded', function() {
+            const shapes = document.querySelectorAll('.shape');
+            
+            shapes.forEach(shape => {
+                // Random movement on page load
+                const randomX = Math.random() * 20 - 10;
+                const randomY = Math.random() * 20 - 10;
+                shape.style.transform = `translate(${randomX}px, ${randomY}px)`;
+            });
+            
+            // Add floating animation
+            function floatShapes() {
+                shapes.forEach(shape => {
+                    const randomX = Math.random() * 10 - 5;
+                    const randomY = Math.random() * 10 - 5;
+                    
+                    shape.animate([
+                        { transform: 'translate(0, 0)' },
+                        { transform: `translate(${randomX}px, ${randomY}px)` },
+                        { transform: 'translate(0, 0)' }
+                    ], {
+                        duration: 15000 + Math.random() * 10000,
+                        iterations: Infinity,
+                        easing: 'ease-in-out'
+                    });
+                });
+            }
+            
+            floatShapes();
+        });
+    </script>
+
+</body>
+</html>
